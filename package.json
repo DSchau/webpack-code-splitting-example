@@ -1,0 +1,35 @@
+{
+  "name": "webpack-code-splitting-example",
+  "version": "1.0.0",
+  "description": "Simple example demoing how code splitting can be used in react",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "cross-env NODE_ENV=production webpack",
+    "clean": "del \"dist/**/*\"",
+    "start": "cross-env NODE_ENV=development webpack-dashboard -- webpack-dev-server --open --port 8080"
+  },
+  "keywords": [],
+  "author": "Dustin Schau <dustinschau@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "~6.0.57",
+    "@types/react": "~0.14.55",
+    "@types/react-dom": "~0.14.20",
+    "awesome-typescript-loader": "~3.0.0-beta.17",
+    "cross-env": "~3.1.4",
+    "del-cli": "~0.2.1",
+    "html-webpack-plugin": "~2.26.0",
+    "typescript": "~2.1.4",
+    "webpack": "2.2.0-rc.3",
+    "webpack-config-assign": "~1.0.0",
+    "webpack-dashboard": "~0.2.1",
+    "webpack-dev-server": "2.2.0-rc.0"
+  },
+  "dependencies": {
+    "d3": "~4.4.0",
+    "react": "~15.4.1",
+    "react-d3": "~0.4.0",
+    "react-dom": "~15.4.1"
+  }
+}
